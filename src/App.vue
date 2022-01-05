@@ -1,18 +1,19 @@
 <template>
-  <router-view />
-  <AddToHomeScreen />
+  <app-layout />
+  <app-add-to-home-screen />
 </template>
 
 <script lang="ts">
 import { useQuasar } from "quasar";
 import { defineComponent, watch } from "vue";
-import useUpdate from "./utils/useUpdate";
-import AddToHomeScreen from "@/components/AddToHomeScreen.vue";
+import useUpdate from "@/utils/useUpdate";
+import appAddToHomeScreen from "@/components/app-add-to-home-screen.vue";
+import appLayout from "@/views/layout/app-layout.vue";
 
 export default defineComponent({
   name: "App",
 
-  components: { AddToHomeScreen },
+  components: { appAddToHomeScreen, appLayout },
 
   setup() {
     const $q = useQuasar();

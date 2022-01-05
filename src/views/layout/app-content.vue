@@ -1,11 +1,13 @@
 <template>
-  <h1>Home Page</h1>
+  <q-page-container>
+    <router-view />
+  </q-page-container>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Home",
+  name: "app-content",
 });
 </script>

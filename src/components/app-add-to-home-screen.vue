@@ -1,9 +1,13 @@
+<template>
+  <span></span>
+</template>
+
 <script>
 import { defineComponent, onMounted, ref } from "vue";
 import { useQuasar } from "quasar";
 
 export default defineComponent({
-  name: "AddToHomeScreen",
+  name: "app-add-to-home-screen",
 
   setup() {
     const $q = useQuasar();

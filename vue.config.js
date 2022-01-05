@@ -6,4 +6,12 @@ module.exports = {
     },
   },
   transpileDependencies: ["quasar"],
+
+  pwa: {
+    name: "Realty Hub Insight",
+    themeColor: "#3E2723",
+    msTileColor: "#000000",
+    appleMobileWebAppCapable: "yes",
+    appleMobileWebAppStatusBarStyle: "black",
+  },
 };
