@@ -2,7 +2,12 @@
   <q-footer class="bg-primary text-white">
     <q-card dark flat class="bg-primary">
       <q-card-section class="q-my-xs text-center">
-        <q-avatar v-for="icon in icons" :key="icon" class="q-ma-sm" icon="home">
+        <q-avatar
+          v-for="icon in icons"
+          :key="icon"
+          class="q-ma-sm"
+          :icon="icon"
+        >
         </q-avatar>
       </q-card-section>
       <q-separator color="white" inset />
@@ -25,7 +30,12 @@ export default defineComponent({
   name: "app-footer",
   components: {},
   setup() {
-    const icons = ref(["mdi-facebook", "twitter", "linkedin", "instagram"]);
+    const icons = ref([
+      "mdi-facebook",
+      "mdi-twitter",
+      "mdi-linkedin",
+      "mdi-instagram",
+    ]);
     return {
       icons,
     };
