@@ -1,3 +1,7 @@
-@import './quasar.variables.scss';
-@import '~quasar-styl';
+@import "./quasar.variables.scss";
+@import "~quasar-styl";
 // @import '~quasar-addon-styl';
+
+.q-carousel__arrow .q-btn {
+  z-index: 99;
+}
