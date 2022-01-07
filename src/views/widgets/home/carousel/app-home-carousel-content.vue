@@ -9,7 +9,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import appHomeCarouselForm from "./app-home-carousel-form.vue";
+import appHomeCarouselForm from "../../home/carousel/app-home-carousel-form.vue";
 
 export default defineComponent({
   name: "app-home-carousel-content",

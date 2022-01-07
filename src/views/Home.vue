@@ -1,16 +1,18 @@
 <template>
   <app-home-carousel />
   <app-home-carousel-content />
+  <app-home-agent-card-list />
 </template>
 
 <script lang="ts">
-import appHomeCarousel from "@/views/widgets/app-home-carousel.vue";
-import appHomeCarouselContent from "@/views/widgets/app-home-carousel-content.vue";
+import appHomeAgentCardList from "@/views/widgets/home/agent/app-home-agent-card-list.vue";
+import appHomeCarouselContent from "@/views/widgets/home/carousel/app-home-carousel-content.vue";
+import appHomeCarousel from "@/views/widgets/home/carousel/app-home-carousel.vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "Home",
 
-  components: { appHomeCarousel, appHomeCarouselContent },
+  components: { appHomeCarousel, appHomeCarouselContent, appHomeAgentCardList },
 });
 </script>
